@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #eee;
+}
+
+.rec-pic {
+	position: relative;
+	width: 250px;
+	height: 200px;
+	border: 6px solid #fff;
+	background-color: #fcc;
+	/*animation: star 1s alternate infinite;*/
+	/*-webkit-clip-path: circle(100px at 0px 0px);*/
+	/*-webkit-clip-path: inset(10%  round 20px );*/
+	/*-webkit-clip-path: ellipse(2px at 50px 50px);*/
+}
+
+.pic {
+	width: 250px;
+	height: 200px;
+	background: url(../images/pic.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.rec-pic1 { -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 30%); }
+.rec-pic2 { -webkit-animation: star 1s alternate infinite; }
+
+.rec-pic1:before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: -50px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 200px solid #fff;
+}
+
+.pic1 { -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 30%); }
+.pic3 { -webkit-clip-path: inset(4%  round 20px ); }
+
+@keyframes star {
+	0% { -webkit-clip-path: polygon(50% 0, 60% 30%, 100% 30%, 65% 60%, 75% 100%, 50% 75%, 25% 100%, 35% 60%, 0 30%, 40% 30%); }
+	100% { -webkit-clip-path: polygon(50% 10%, 60% 20%, 80% 30%, 65% 50%, 65% 80%, 50% 76%, 35% 80%, 35% 50%, 20% 30%, 40% 20%); }
+}
