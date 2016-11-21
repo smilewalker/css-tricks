@@ -1,3 +1,3 @@
 # show irregular pictures in the region
-irregular pictures is to be shown
+<p>irregular pictures is to be shown</p>
 <img src="images/result.png">
