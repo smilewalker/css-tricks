@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello checkbox</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		.input-wrap {
+			width: 20rem;
+			height: 10rem;
+			padding-top: 5rem;
+			margin: auto;
+			background-color: #f99;
+			color: #fff;
+			text-align: center;
+			font-size: 23px;
+		}
+		input[type='checkbox'] {
+			position: relative;
+			width: 20px;
+			height: 20px;
+	        -webkit-appearance: none;
+	        margin-right: 10px;
+	        border: 2px solid #fff;
+	        border-radius: 50%;
+	    }
+/*	    input[type='checkbox']:checked {
+	        clip: (0,0,0,0);
+	        outline: 0;
+	        background-color: transparent;
+	    }*/
+	    input[type='checkbox']:checked:after {
+	        content: '\2713';
+	        position: absolute;
+	        left: 3px;
+	        color: #fff;
+	        -webkit-appearance: none;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="input-wrap">
+		<label class="btn-admit admit"><input type="checkbox" id="save-in" name="saveIn" checked="checked" value="Bike" />我愿意 Yes,I do</label>
+	</div>
+</body>
+</html>
