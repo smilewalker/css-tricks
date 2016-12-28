@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello checkbox</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+	body {
+		background: #fcc;
+	}
+	.steps-wrap {
+		width: 124px;
+		height: 80px;
+		background-image: url(images/bird2.png);
+		background-position: 0 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		-webkit-animation: stepsA 1s steps(2);
+	}
+	@-webkit-keyframes stepsA {
+
+		50% { background-position: 0 100%; }
+
+		to { background-position: 0 0; }
+		/*to { background-position: 0 100%; }*/
+	}
+
+	</style>
+</head>
+<body>
+	<div class="steps-wrap"></div>
+</body>
+</html>
