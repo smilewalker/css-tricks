@@ -23,7 +23,22 @@
 		<p>钥匙精美有样子</p>
 		<p>你锁了 人家就懂了</p>
 	</article>
+
+	<div class="concave"></div>
 </section>
 
+<script type="text/javascript">
+	function calcu(n) {
+var coefficients = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+    var calc = function(s) {
+        var sum = 0;
+        for (var i = 0; i < 17; ++i)
+            sum += coefficients[i] * s[i]; // JavaScript is weakly typed
+        return '10X98765432'[sum % 11];
+    };
+	}
+	// if (/^\d{17}$/.test(33108219930723142))
+	console.log( calcu('33108219930723142'))
+</script>
 </body>
 </html>
